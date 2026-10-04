@@ -35,4 +35,4 @@ Source product names, pack text, IDs and Column B prices are preserved. Review g
 
 ## Image access for the form
 
-The repository remains private. Raw GitHub image URLs require authenticated access and cannot serve anonymous EZFormz visitors. Export the supplied ZIP photos to your form's accessible image host before using the form. Compatibility with the actual EZFormz importer has not been tested.
+The repository is public. The raw GitHub image URLs in `ezformz_products.csv` can load without signing in and can be used as product image URLs in the form. Compatibility with the actual EZFormz importer has not been tested.
