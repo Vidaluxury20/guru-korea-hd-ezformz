@@ -10,4 +10,4 @@ HD means the published file measures at least 1000 pixels on both sides. Supplie
 
 Source product names, pack text, IDs and Column B prices are preserved. Review grouped variants, packaging changes, watermarks and source/catalog unit differences in review_flag. Medytox 100iu is ambiguous between Medytox brands; Trengamin 500mg lacks a verified exact pack photo. Supply exact supplier assets for these two entries.
 
-The repository remains private. Raw GitHub image URLs require authenticated access and cannot serve anonymous EZFormz visitors. Export the ZIP photos to your form's accessible image host before using the form. The actual EZFormz importer has not been tested.
+The repository is public. Raw GitHub image URLs load without signing in and can be used in the form. The actual EZFormz importer has not been tested.
