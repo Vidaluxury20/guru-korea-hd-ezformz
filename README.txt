@@ -1,18 +1,13 @@
-GuRu Korea EZFormz import mapping
+# GuRu Korea - Column B catalog for EZFormz
 
-452 entries. 169 HD replacement photos, 210 retained original photos, 73 missing photos.
+452 stable catalog entries with Column B prices in USD.
 
-Use ezformz_products.csv to map:
-product_name -> product/item name
-price_column_b_usd -> unit price (USD)
-image_url -> product image URL
-pack_size -> product option/description
-item_id -> reference/SKU, if supported
+Photo counts: {"HD replacement": 219, "Photo pending": 2, "Retained original": 191, "New source photo (below HD)": 40}. 450 entries have mapped photo files. This update fills 71 of the original 73 blank entries.
 
-Prices are copied from Column B of the supplied catalog. Do not substitute retail prices from image suppliers.
+`ezformz_products.csv` maps item_id to product reference, product_name to name, pack_size to option description, price_column_b_usd to unit price, and image_url to product photo. `photo-audit.csv` records resolutions and review flags. `needs-hd-photo.csv` lists entries needing a new HD source. `photo-pending.csv` lists missing exact matches.
 
-The repository is currently PRIVATE. The image_url links are prepared but will not load anonymously in EZFormz until public visibility is approved and enabled.
+HD means the published file measures at least 1000 pixels on both sides. Supplier files can themselves be enlarged or compressed. No missing product photos were invented or AI-upscaled. Smaller real source photos are labeled below HD. Retained originals remain identified.
 
-Blank image URLs mean a product photo is still missing. Retained original photos are not new HD replacements. Review flagged grouped variants and repeated listings before importing. These rows were preserved from the source; none were silently removed.
+Source product names, pack text, IDs and Column B prices are preserved. Review grouped variants, packaging changes, watermarks and source/catalog unit differences in review_flag. Medytox 100iu is ambiguous between Medytox brands; Trengamin 500mg lacks a verified exact pack photo. Supply exact supplier assets for these two entries.
 
-EZFormz field compatibility has not been tested against its import interface in this task. Map the columns in its importer if available, or use this spreadsheet for product entry.
+The repository remains private. Raw GitHub image URLs require authenticated access and cannot serve anonymous EZFormz visitors. Export the ZIP photos to your form's accessible image host before using the form. The actual EZFormz importer has not been tested.

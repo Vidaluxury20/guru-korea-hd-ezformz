@@ -1,6 +1,17 @@
 {
-  "entries": 452,
-  "hd": 169,
-  "original": 210,
-  "missing": 73
+  "total_products": 452,
+  "photo_counts": {
+    "HD replacement": 219,
+    "Photo pending": 2,
+    "Retained original": 191,
+    "New source photo (below HD)": 40
+  },
+  "mapped_images": 450,
+  "previously_missing_photos_added": 71,
+  "new_images_or_upgrades": 90,
+  "hd_definition": "Published source file at least 1000px on both sides; no AI upscaling. Dimensions do not prove original camera quality.",
+  "missing_ids": [
+    "GKR-008",
+    "GKR-349"
+  ]
 }

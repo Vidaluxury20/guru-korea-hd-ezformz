@@ -1,38 +1,13 @@
-# GuRu Korea — Column B catalog for EZFormz
+# GuRu Korea - Column B catalog for EZFormz
 
-452 catalog entries mapped to Column B prices in USD. Product IDs remain stable across the CSV and photo filenames.
+452 stable catalog entries with Column B prices in USD.
 
-| Photo status | Entries |
-| --- | ---: |
-| HD replacement | 169 |
-| Retained source photo | 210 |
-| Photo pending | 73 |
-| Total | 452 |
+Photo counts: {"HD replacement": 219, "Photo pending": 2, "Retained original": 191, "New source photo (below HD)": 40}. 450 entries have mapped photo files. This update fills 71 of the original 73 blank entries.
 
-## Files
+`ezformz_products.csv` maps item_id to product reference, product_name to name, pack_size to option description, price_column_b_usd to unit price, and image_url to product photo. `photo-audit.csv` records resolutions and review flags. `needs-hd-photo.csv` lists entries needing a new HD source. `photo-pending.csv` lists missing exact matches.
 
-- `ezformz_products.csv`: product names, pack sizes, Column B unit prices, image URLs, source pages, photo sources and review flags.
-- `images/`: 379 product photos named by item ID, such as `GKR-001.jpg`.
-- `GuRu_Korea_Column_B_Price_List.pdf`: the refreshed Column B catalog.
-- `catalog-summary.json`: counts by photo status.
-- `README.txt`: import notes.
+HD means the published file measures at least 1000 pixels on both sides. Supplier files can themselves be enlarged or compressed. No missing product photos were invented or AI-upscaled. Smaller real source photos are labeled below HD. Retained originals remain identified.
 
-## Form field mapping
+Source product names, pack text, IDs and Column B prices are preserved. Review grouped variants, packaging changes, watermarks and source/catalog unit differences in review_flag. Medytox 100iu is ambiguous between Medytox brands; Trengamin 500mg lacks a verified exact pack photo. Supply exact supplier assets for these two entries.
 
-| CSV column | Form field |
-| --- | --- |
-| `item_id` | Product reference / SKU |
-| `product_name` | Product name |
-| `pack_size` | Pack size / option description |
-| `price_column_b_usd` | Unit price in USD |
-| `image_url` | Product image URL |
-
-The image paths and IDs were validated against all 379 uploaded photo files. All 452 prices were checked against the supplied catalog data. Prices are from Column B; image suppliers' retail prices are not used.
-
-## Before building the form
-
-This repository is **private**. The prepared raw GitHub image URLs will not load anonymously in EZFormz until public visibility is approved and enabled, or the photos are placed on another accessible host.
-
-73 entries have blank image URLs and need photos. The retained source images are not new HD replacements. Review the `review_flag` column for repeated listings and grouped variants; source entries were preserved rather than silently merged.
-
-The CSV provides the field mapping for building the new form. Compatibility with the actual EZFormz importer has not been tested; map the fields in its importer if supported, or use the CSV for product entry.
+The repository remains private. Raw GitHub image URLs require authenticated access and cannot serve anonymous EZFormz visitors. Export the ZIP photos to your form's accessible image host before using the form. The actual EZFormz importer has not been tested.
